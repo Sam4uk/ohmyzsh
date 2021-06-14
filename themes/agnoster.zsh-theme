@@ -81,6 +81,7 @@ prompt_end() {
   fi
   echo -n "%{%f%}"
   CURRENT_BG=''
+  echo -n "\e[m\n➜%{%f%}"
 }
 
 ### Prompt components
@@ -248,7 +249,7 @@ build_prompt() {
   prompt_status
   prompt_virtualenv
   prompt_aws
-  prompt_context
+##  prompt_context
   prompt_dir
   prompt_git
   prompt_bzr
